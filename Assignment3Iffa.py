@@ -12,6 +12,7 @@ dfPatient = pd.read_csv(patient_data, encoding="latin")
 dfPatient.dropna(inplace=True)
 
 app = Dash(__name__)
+server = app.server
 
 app.layout = html.Div ([
     html.H1("Data Visualization Assignment 3"),
