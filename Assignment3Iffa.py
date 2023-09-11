@@ -17,6 +17,7 @@ patient_data_clean = dfPatient.loc[:, ['gender', 'age', 'current_state']].dropna
 
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
+app.title = "Iffa Assignment 3"
 
 def create_covid_cases_figure():
 
